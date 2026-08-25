@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>H2O-AI - Smart Water Quality Detector</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            💧 H2O<span>AI</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#test">Test Water</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+
+            <h1>
+                Discover Your
+                <span>Water Quality</span>
+            </h1>
+
+            <p>
+                Welcome to H2O-AI! 💧
+                Enter your water measurements and let our
+                smart water-quality system analyse them.
+            </p>
+
+            <a href="#test">
+                <button class="start-btn">
+                    🔬 Test My Water
+                </button>
+            </a>
+
+        </div>
+
+
+        <div class="water-character">
+
+            <div class="drop">
+                💧
+            </div>
+
+            <div class="bubble bubble1"></div>
+            <div class="bubble bubble2"></div>
+            <div class="bubble bubble3"></div>
+
+            <h3>Hi! I'm Aqua 👋</h3>
+
+            <p>
+                Let's check your water!
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="test" class="test-section">
+
+        <h2>🔬 Water Quality Test</h2>
+
+        <p class="subtitle">
+            Enter the values measured from your water sample.
+        </p>
+
+
+        <div class="form-card">
+
+            <label>🧪 pH Value</label>
+
+            <input
+                type="number"
+                id="ph"
+                placeholder="Example: 7.2"
+                step="0.1"
+            >
+
+
+            <label>💧 TDS Value (ppm)</label>
+
+            <input
+                type="number"
+                id="tds"
+                placeholder="Example: 300"
+            >
+
+
+            <label>🌫️ Turbidity (NTU)</label>
+
+            <input
+                type="number"
+                id="turbidity"
+                placeholder="Example: 1.5"
+                step="0.1"
+            >
+
+
+            <button
+                class="test-btn"
+                onclick="testWater()"
+            >
+                🔬 ANALYSE MY WATER
+            </button>
+
+        </div>
+
+
+        <div id="loading" class="loading">
+
+            💧 H2O-AI is analysing...
+
+            <div class="loading-bubbles">
+                🫧 🫧 🫧
+            </div>
+
+        </div>
+
+
+        <div id="result" class="result-card">
+
+            <div class="result-icon">
+                💧
+            </div>
+
+            <h2 id="quality">
+                GOOD QUALITY
+            </h2>
+
+            <div class="score">
+                <span id="score">--</span>/100
+            </div>
+
+            <p id="message">
+                Your result will appear here.
+            </p>
+
+
+            <div class="details">
+
+                <h3>📊 Your Measurements</h3>
+
+                <p>
+                    pH:
+                    <strong id="resultPh">--</strong>
+                </p>
+
+                <p>
+                    TDS:
+                    <strong id="resultTds">--</strong> ppm
+                </p>
+
+                <p>
+                    Turbidity:
+                    <strong id="resultTurbidity">--</strong> NTU
+                </p>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <h3>🤖 H2O-AI Says</h3>
+
+                <p id="aiMessage">
+                    Enter your measurements to get an explanation.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="about" class="about">
+
+        <h2>🌍 Why Water Quality Matters</h2>
+
+        <p>
+            Water quality can be influenced by different physical
+            and chemical properties. H2O-AI is designed as an
+            educational project to help users understand these
+            measurements in a simple and interactive way.
+        </p>
+
+        <div class="cards">
+
+            <div class="info-card">
+                🧪
+                <h3>pH</h3>
+                <p>
+                    Indicates how acidic or alkaline the water is.
+                </p>
+            </div>
+
+
+            <div class="info-card">
+                💧
+                <h3>TDS</h3>
+                <p>
+                    Indicates the amount of dissolved substances
+                    in the water.
+                </p>
+            </div>
+
+
+            <div class="info-card">
+                🌫️
+                <h3>Turbidity</h3>
+                <p>
+                    Indicates how cloudy or clear the water is.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <footer>
+
+        <h3>💧 H2O-AI</h3>
+
+        <p>
+            Smart Water Quality Education & Screening
+        </p>
+
+        <p>
+            Made as a student AI project 🌱
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
