@@ -1,1 +1,1 @@
-# H2O-AI
+# AQUA-AI
