@@ -61,7 +61,7 @@ function testWater() {
                 "Your water measurements fall within the selected project range.";
 
             aiMessage =
-                "AquaAI found that the entered pH, TDS and turbidity values are within the ranges used by this demonstration. This is an educational screening result, not a laboratory safety certification.";
+                " H2O-AI found that the entered pH, TDS and turbidity values are within the ranges used by this demonstration. This is an educational screening result, not a laboratory safety certification.";
 
         }
 
@@ -79,7 +79,7 @@ function testWater() {
                 "Some measurements are outside the preferred project range.";
 
             aiMessage =
-                "AquaAI recommends checking the individual measurements and investigating the water source if unusual values persist.";
+                "H2O-AI recommends checking the individual measurements and investigating the water source if unusual values persist.";
 
         }
 
@@ -92,7 +92,7 @@ function testWater() {
                 "Some measurements are outside the selected project ranges.";
 
             aiMessage =
-                "AquaAI detected values that deserve further investigation. This result does not identify a specific contaminant or diagnose a health condition.";
+                "H2O-AI detected values that deserve further investigation. This result does not identify a specific contaminant or diagnose a health condition.";
 
         }
 
