@@ -299,15 +299,15 @@ nav a:hover {
 }
 
 
-.loading-bubbles {
+.loading-question marks and exclamation {
 
     margin-top: 15px;
 
-    animation: bubbles 1s infinite;
+    animation: question mark and exclamation 1s infinite;
 }
 
 
-@keyframes bubbles {
+@keyframes question mark and exclamation {
 
     0% {
         transform: translateY(0);
